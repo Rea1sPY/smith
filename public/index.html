@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smith Brothers | Alpha Roleplay</title>
+<meta name="description" content="SMITH BROTHERS — Alpha Roleplay (SA-MP) family. فمیلی اسمیت برادرز در آلفا رول‌پلی.">
+<meta property="og:title" content="Smith Brothers | Alpha Roleplay"><meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="/style.css"></head>
+<body><canvas id="fx"></canvas><div id="loader"><b>SMITH BROTHERS</b><i></i></div><div id="toasts" aria-live="polite"></div>
+<header><a class="logo" href="#home">SMITH <b>BROTHERS</b></a>
+<nav id="nav"><a href="#home" data-i="home"></a><a href="#status" data-i="status"></a><a href="#members" data-i="members"></a><a href="#rules" data-i="rules"></a><a href="#news" data-i="news"></a><a href="#join" data-i="join"></a><a href="#" id="openSet" data-i="settings"></a></nav>
+<button id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button></header>
+<main>
+<section class="hero" id="home" style="max-width:none"><h1 class="en">SMITH BROTHERS</h1><p>ALPHA ROLEPLAY | EST. 2024</p>
+<div class="hero-btns"><a class="btn p" id="tgSup" target="_blank" rel="noopener"><i class="fab fa-telegram"></i><span data-i="support"></span></a><a class="btn" id="tgCh" target="_blank" rel="noopener"><i class="fab fa-telegram"></i><span data-i="channel"></span></a></div></section>
+<section class="rv"><h2 class="st" data-i="statsT"></h2><div class="grid" id="stats"></div></section>
+<section id="status" class="rv"><h2 class="st" data-i="statusT"></h2><div class="card status"><h3 id="stLine" style="font-size:1.6rem;color:#fff"></h3><p id="stFac" style="margin-top:8px"></p><p id="stUpd" style="color:var(--mu);font-size:.85rem;margin-top:10px"></p></div></section>
+<section id="members" class="rv"><h2 class="st" data-i="membersT"></h2>
+<div class="tools"><input id="q" data-ph="search"><select id="rf"></select><select id="so"><option value="rank" data-i="byRank"></option><option value="name" data-i="byName"></option><option value="date" data-i="byDate"></option></select></div>
+<div class="grid" id="mg"></div></section>
+<section id="rules" class="rv"><h2 class="st" data-i="rulesT"></h2><div class="grid" id="rg" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"></div></section>
+<section id="news" class="rv"><h2 class="st" data-i="newsT"></h2><div id="ng"></div></section>
+<section id="join" class="rv"><h2 class="st" data-i="joinT"></h2><div class="wrap card">
+<div id="closed" class="closed" hidden><i class="fas fa-lock"></i><h3 style="color:#fff;margin:10px 0" data-i="closedT"></h3><p style="color:var(--mu)" data-i="closedD"></p></div>
+<form id="f" novalidate><div class="row"><div><label data-i="fName"></label><input name="ic_name" required maxlength="80" placeholder="John Smith"></div><div><label data-i="fTg"></label><input name="telegram" required maxlength="40" placeholder="@username"></div></div>
+<div class="row"><div><label data-i="fLvl"></label><input name="level" type="number" min="1" max="9999" required></div><div><label data-i="fShot"></label><input name="screenshot" type="file" accept="image/png,image/jpeg,image/webp" required></div></div>
+<label data-i="fExp"></label><textarea name="experience" rows="2" maxlength="1000"></textarea><label data-i="fWhy"></label><textarea name="reason" rows="4" maxlength="2000" required></textarea>
+<p class="err" id="ferr"></p><button class="btn p" style="width:100%;justify-content:center;margin-top:8px" data-i="send"></button></form></div></section>
+</main>
+<footer><div id="soc"></div><p style="margin-top:10px">© 2026 Smith Brothers · Alpha Roleplay</p><p style="font-size:.8rem"><span data-i="upd"></span>: <span id="fUpd"></span></p></footer>
+<button id="top" aria-label="Top"><i class="fas fa-chevron-up"></i></button>
+<dialog id="dlg"><h3 style="color:#fff;margin-bottom:12px" data-i="settings"></h3>
+<label data-i="lang"></label><select id="sLang"><option value="fa">فارسی</option><option value="en">English</option></select>
+<label data-i="theme"></label><select id="sTheme"><option value="red">Black &amp; Red</option><option value="dark">Dark</option></select>
+<label><input type="checkbox" id="sAnim" style="width:auto"> <span data-i="anim"></span></label><label><input type="checkbox" id="sSnd" style="width:auto"> <span data-i="snd"></span></label>
+<button class="btn p" id="sClose" style="margin-top:18px;width:100%;justify-content:center" data-i="close"></button></dialog>
+<script src="/app.js"></script></body></html>

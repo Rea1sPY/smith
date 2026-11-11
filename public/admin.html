@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Admin | Smith Brothers</title>
+<link rel="stylesheet" href="/style.css"><style>body{font-family:'Segoe UI',sans-serif;padding:20px}main{max-width:1000px;margin:auto}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.tabs .btn.on{background:var(--red);color:#000}
+.row2{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.card+.card{margin-top:12px}label{display:block;margin:10px 0 4px;font-size:.85rem;color:#ccc}.sm{padding:6px 14px;font-size:.85rem}.pill{padding:2px 10px;border-radius:20px;background:#222;font-size:.8rem}</style></head>
+<body><main><div class="row2"><h1 class="logo">SMITH <b>BROTHERS</b> · Admin</h1><div id="who"></div></div>
+<div id="login" class="card" style="max-width:380px;margin:60px auto" hidden><h3>Administrator sign in</h3><label>Username</label><input id="u" autocomplete="username"><label>Password</label><input id="p" type="password" autocomplete="current-password"><p class="err" id="le"></p><button class="btn p" id="go" style="width:100%;justify-content:center">Sign in</button></div>
+<div id="app" hidden><div class="tabs" id="tabs"></div><div id="view"></div></div></main>
+<dialog id="dlg"><form id="df" method="dialog"></form></dialog><div id="toasts"></div><script src="/admin.js"></script></body></html>
